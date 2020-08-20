@@ -1,28 +1,39 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Hello World" />
-  </div>
+  <Todos v-bind:todos="todos" />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Todos from "./components/Todos";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Todos,
+  },
+  // A function that returns an object
+  data() {
+    return {
+      todos: [
+        {
+          id: 2,
+          title: "Eat ass",
+          completed: false,
+        },
+        {
+          id: 34,
+          title: "Buy groceries",
+          completed: false,
+        },
+        {
+          id: 21,
+          title: "Pay Cable bill",
+          completed: false,
+        },
+      ],
+    };
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
