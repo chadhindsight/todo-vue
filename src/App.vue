@@ -16,7 +16,7 @@ export default {
       todos: [
         {
           id: 2,
-          title: "Eat ass",
+          title: "Make dinner",
           completed: false,
         },
         {
