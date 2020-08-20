@@ -1,6 +1,6 @@
 # todo-vue
 
-A basic todo app built with Vue.js
+A basic todo app built with Vue.js and vue cli
 
 ## Project setup
 
