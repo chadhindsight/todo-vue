@@ -14,6 +14,7 @@ export default {
   props: ["todo"],
   methods: {
     markComplete() {
+      // eslint-disable-next-line vue/no-mutating-props
       this.todo.completed = !this.todo.completed;
     },
   },
